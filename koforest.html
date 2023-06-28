@@ -1,0 +1,223 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+          display:block;
+          width: 100%;
+          margin-left:auto;
+          margin-right:auto;
+        }
+        * 
+{
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: Verdana, sans-serif;
+}
+.mySlides 
+{
+    display: none;
+}
+img 
+{
+    vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.box{
+            margin: 50px;
+            border-radius: 25px;
+            border: 2px solid black;
+            height:1200px;
+            width:1320px;
+            margin-top: 70px;
+            padding-top: 5px;
+            
+        }
+        .row{
+            margin: 30px;
+            border-radius: 25px;
+            border: 2px solid white;
+            height:250px;
+            width:250px;
+            margin-top: 30px;
+            
+        }
+        .col1{
+            margin: 25px;
+            border-radius: 25px;
+            border: 2px solid white;
+            margin-top: 40px;
+            height: 300px;
+            width:1190px;
+        }
+        .col2{
+            margin: 30px;
+            height:250px;
+            width:900px;
+            margin-top: -300px;
+            margin-left:360px;
+        }
+ 
+        </style>
+        <body>
+            <h4>PINE FOREST</h4>
+            <p>
+            Pine Forest is located in the southwest of Kodaikanal.It is 4km away from kodaikanal bus stand In 1906, knowing a value of timber, Mr.Bryant started the Kodaikanala
+            pine plantations.Forest is known for its tall pines,walking,photography,horse-riding.The most popular  thing in Pine
+            Forest is that it is the first forest close to the<b>Solar Observatory</b>
+            </p>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="pine1.jpg" style="width:400px;height:200px;">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="pine2.jpg" style="width:400px;height:200px">
+                  <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="pine3.jpg" style="width:400px;height:200px">
+                    <div class="text"></div>
+                  </div>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000);
+                }
+                </script>
+        <p>
+            <ul>
+                <li>Weather: 21° C</li>
+                 <li>Timing to visit: 10:00 AM - 6:00 PM</li> 
+                 <li>Long Enough : 1-2 hrs</li> 
+                 <li> Entry Fee : NO ENTRY FEE</li> 
+            </ul>
+        </p>
+      </p> 
+      <h4>History behind the forest</h4>
+      <P>
+      The pine plantation was started in 1906 by <b>Mr.Bryant</b>and the Pine Forest was one among the treasures of Kodai.
+      This place will be loved by the people who are interested in photography and tourists will be more attracted due to its ambiance    
+       </p>
+       <div>
+        <h4>Resorts near me</h4>
+        <div class="box">
+          <div class="row">
+              <div class="col1">
+                  <img src="villa_treat.jpg" style="height:200px;width:300px; margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3><b><i>Villa Retreat</i></b></h3>
+                  <p>
+                      <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.4 km from Coaker's Walk.<br><br>
+                      <i style="font-size:24px;" class="fa fa-map-marker"></i> Location: Coaker's Walk, Kodaikanal, Tamil Nadu 624101.<br><br>
+                      <i style="font-size:24px;" class="fa fa-phone"></i> Contact: 092442 43940</p>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col1">
+                <img src="kodai_resort.jpg"style="height:200px;width:300px;margin-left: 10px;"></img>
+            </div>
+            <div class="col2">
+                <h3><b><i>Kodai Resort</i></b></h3>
+                <p>
+                  <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.5 km from Coaker's Walk.<br><br>
+                  <i style="font-size:24px" class="fa fa-map-marker"></i> Location: Coaker's Walk, Kodaikanal, Tamil Nadu 624101.<br><br>
+                  <i style="font-size:24px" class="fa fa-phone"></i> Contact: 094433 40106  
+                </p>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <img src="hilltop.jpg"style="height:200px;width:300px;margin-left: 10px;"></img>
+            </div>
+            <div class="col2">
+                <h3><b><i>Hilltop Towers</i></b></h3>
+                <p >
+                  <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.8 km from Coaker's Walk.<br><br>
+                  <i style="font-size:24px" class="fa fa-map-marker"></i> Location: 6FPR+97G, Club Rd, next to Pizza Corner, Kodaikanal, Tamil Nadu 624101.<br><br>
+                  <i style="font-size:24px" class="fa fa-phone"></i> Contact: 04542 240 413
+                </p>   
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <img src="cartlon.jpg" style="height:200px;width:300px;margin-left: 10px;"></img>
+            </div>
+            <div class="col2">
+                <h3 ><b><i>The Cartlon</i></b></h3>
+                <p>
+                  <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.9 km from Coaker's Walk.<br><br>
+                  <i style="font-size:24px" class="fa fa-map-marker"></i> Location: Lake Rd, Kodaikanal, Tamil Nadu 624101.<br><br>
+                  <i style="font-size:24px" class="fa fa-phone"></i> Contact: 04542 248 555  
+                </p>
+            </div>
+        </div>           
+    </div>    
+      
+    </body>
+</html>

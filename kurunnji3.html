@@ -1,0 +1,194 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+          display:block;
+          width: 100%;
+          margin-left:auto;
+          margin-right:auto;
+        }
+        * 
+{
+    box-sizing: border-box;
+}
+body 
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:18px;
+}
+h4{
+  font-size:20px;
+}
+.mySlides 
+{
+    display: none;
+}
+img 
+{
+    vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ 
+        </style>
+        <body>
+            <h4>KURUNJI ANDAVAR TEMPLE</h4>
+            <p>
+                Kurunji Andavar Temple is dedicated to <b>Lord Murugan</b>.This region is famous for the 
+                kurunji flower that blooms once in 12 years.Located at a distance of 3km from the kodaikanal lake.
+
+            </p>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="kurunnji1.jpg" style="width:400px;height:300px;">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="kurunnji2.jpg" style="width:400px;height:300px">
+                  <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="kurunnji4.jpg" style="width:400px;height:300px">
+                    <div class="text"></div>
+                  </div>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000);
+                }
+                </script>
+        <p>
+            <ul>
+                <li>Weather: 23° C</li>
+                 <li>Timing to visit: 06:30 AM - 07:30 PM</li> 
+                 <li>Long Enough : 1-2 hrs</li> 
+                 <li> Entry Fee : NO ENTRY FEE</li> 
+            </ul>
+        </p>
+        
+            <h4>History behind this temple</h4>
+            <P>
+            The temple was constructed in 1936 by <b>Lady Leelavathi Ramanathan</b>.She built this temple commemorating his memory.
+            It initially named as <b>SRI KURINJI EASWARE TEMPLE</b> where Kurinji means Flower and Easware means the god from time to 
+            time.
+                
+        </p>
+        <div>
+          <h4>Resorts near me</h4>
+          <div class="box">
+            <div class="row">
+                <div class="col1">
+                    <img src="villa_treat.jpg" style="height:200px;width:300px; margin-left: 10px;"></img>
+                </div>
+                <div class="col2">
+                    <h3><b><i>Villa Retreat</i></b></h3>
+                    <p>
+                        <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.4 km from Coaker's Walk.<br><br>
+                        <i style="font-size:24px;" class="fa fa-map-marker"></i> Location: Coaker's Walk, Kodaikanal, Tamil Nadu 624101.<br><br>
+                        <i style="font-size:24px;" class="fa fa-phone"></i> Contact: 092442 43940</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col1">
+                  <img src="kodai_resort.jpg"style="height:200px;width:300px;margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3><b><i>Kodai Resort</i></b></h3>
+                  <p>
+                    <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.5 km from Coaker's Walk.<br><br>
+                    <i style="font-size:24px" class="fa fa-map-marker"></i> Location: Coaker's Walk, Kodaikanal, Tamil Nadu 624101.<br><br>
+                    <i style="font-size:24px" class="fa fa-phone"></i> Contact: 094433 40106  
+                  </p>    
+              </div>
+          </div>
+          <div class="row">
+              <div class="col1">
+                  <img src="hilltop.jpg"style="height:200px;width:300px;margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3><b><i>Hilltop Towers</i></b></h3>
+                  <p >
+                    <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.8 km from Coaker's Walk.<br><br>
+                    <i style="font-size:24px" class="fa fa-map-marker"></i> Location: 6FPR+97G, Club Rd, next to Pizza Corner, Kodaikanal, Tamil Nadu 624101.<br><br>
+                    <i style="font-size:24px" class="fa fa-phone"></i> Contact: 04542 240 413
+                  </p>   
+              </div>
+          </div>
+          <div class="row">
+              <div class="col1">
+                  <img src="cartlon.jpg" style="height:200px;width:300px;margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3 ><b><i>The Cartlon</i></b></h3>
+                  <p>
+                    <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.9 km from Coaker's Walk.<br><br>
+                    <i style="font-size:24px" class="fa fa-map-marker"></i> Location: Lake Rd, Kodaikanal, Tamil Nadu 624101.<br><br>
+                    <i style="font-size:24px" class="fa fa-phone"></i> Contact: 04542 248 555  
+                  </p>
+              </div>
+          </div>           
+      </div>    
+    </body>
+</html>

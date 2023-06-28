@@ -1,0 +1,7 @@
+
+        scheme://prefix.domain:port/path/filename       url encoding
+
+
+        <html><body><head></head></body></html>......will validate
+
+        <!--comments-->     comment section

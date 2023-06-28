@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+   
+    <style>
+        img {
+          display:block;
+          width: 100%;
+          margin-left:auto;
+          margin-right:auto;
+        }
+        * 
+{
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    
+}
+h4{
+        font-size: 20px;
+        }
+        h3{
+          font-size: 20px;
+        }
+.mySlides 
+{
+    display: none;
+}
+img 
+{
+    vertical-align: middle;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.box{
+            margin: 50px;
+            border-radius: 25px;
+            border: 2px solid black;
+            height:1200px;
+            width:1320px;
+            margin-top: 70px;
+            padding-top: 5px;
+            
+        }
+        .row{
+            margin: 30px;
+            border-radius: 25px;
+            border: 2px solid white;
+            height:250px;
+            width:250px;
+            margin-top: 30px;
+            
+        }
+        .col1{
+            margin: 25px;
+            border-radius: 25px;
+            border: 2px solid white;
+            margin-top: 40px;
+            height: 300px;
+            width:1190px;
+        }
+        .col2{
+            margin: 30px;
+            height:250px;
+            width:900px;
+            margin-top: -300px;
+            margin-left:360px;
+        }
+ 
+        </style>
+        <body>
+            <h4>BRYANT PARK</h4>
+            <p>
+            Bryant park located in South-East direction of Kodai Lake. This park is the most splendid place often the tourits visits and spend their time 
+            with their family.The park is properly maintained. There is a glass home inside the park where the flower pots are organised in very good manner. 
+            </p>
+            <br>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="kopark1.jpg" style="width:300px;height:200px;">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="kopark2.jpg" style="width:300px;height:200px">
+                  <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="kopark3.jpg" style="width:300px;height:200px">
+                  <div class="text"></div>
+                </div>
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000);
+                }
+                </script>
+        <p>
+            <ul>
+                <li>Weather: 20° C</li>
+                 <li>Timing to visit: 09:30 AM - 05:00 PM</li> 
+                 <li>Long Enough : 2-3 hrs</li> 
+                 <li> Entry Fee : INR 5-10 per person</li> 
+            </ul>
+          </p>
+         
+        <h4>History behind this place</h4>
+        <P>
+            This park was established in 1908 by H.D.Bryant who belongs to Madurai Forest office.It's around 20.5acres.
+            The park contain Bodhi tree which resembles our religious significance.
+            The park contain the 157-year old Eucalyptus tree and contains the varieties of roses.
+            
+         </p>
+         <div>
+          <h4>Resorts near me</h4>
+          <div class="box">
+            <div class="row">
+                <div class="col1">
+                    <img src="onondaga.jpg" style="height:200px;width:300px; margin-left: 10px;"></img>
+                </div>
+                <div class="col2">
+                    <h3><b><i>Onondaga Kodaikanal</i></b></h3>
+                    <p>
+                        <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.2 km from Bryant Park.<br><br>
+                        <i style="font-size:24px;" class="fa fa-map-marker"></i> Location: Onondaga, Club Rd, near Van Allen Hospital, Kodaikanal, Tamil Nadu 624101.<br><br>
+                        <i style="font-size:24px;" class="fa fa-phone"></i> Contact:  099654 10080</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col1">
+                  <img src="richwin.jpg"style="height:200px;width:300px;margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3><b><i>Richwin Hotel</i></b></h3>
+                  <p>
+                    <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.3 km from Bryant Park<br><br>
+                    <i style="font-size:24px" class="fa fa-map-marker"></i> Location: No. 22/33-2, Anthoniyar Kovil Street, Coaker's Walk, Near Kodaikanal Bus Stand,<br> Kodaikanal, Tamil Nadu 600101 .<br><br>
+                    <i style="font-size:24px" class="fa fa-phone"></i> Contact:  04542 242 699
+                  </p>    
+              </div>
+          </div>
+          <div class="row">
+              <div class="col1">
+                  <img src="kodai_resort.jpg"style="height:200px;width:300px;margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3><b><i>Kodai Resort</i></b></h3>
+                  <p >
+                    <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.8 km from Coaker's Walk.<br><br>
+                    <i style="font-size:24px" class="fa fa-map-marker"></i> Location: 6FPR+97G, Club Rd, next to Pizza Corner, Kodaikanal, Tamil Nadu 624101.<br><br>
+                    <i style="font-size:24px" class="fa fa-phone"></i> Contact: 04542 240 413
+                  </p>   
+              </div>
+          </div>
+          <div class="row">
+              <div class="col1">
+                  <img src="cartlon.jpg" style="height:200px;width:300px;margin-left: 10px;"></img>
+              </div>
+              <div class="col2">
+                  <h3 ><b><i>The Cartlon</i></b></h3>
+                  <p>
+                    <i style="font-size:24px;" class="fa fa-map-signs"></i>Route: 0.6 km from Bryant Park.<br><br>
+                    <i style="font-size:24px" class="fa fa-map-marker"></i> Location: Lake Rd, Kodaikanal, Tamil Nadu 624101.<br><br>
+                    <i style="font-size:24px" class="fa fa-phone"></i> Contact: 04542 248 555  
+                  </p>
+              </div>
+          </div>           
+      </div>    
+    </body>
+</html>
